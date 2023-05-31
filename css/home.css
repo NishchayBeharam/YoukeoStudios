@@ -1,0 +1,262 @@
+.home-section-a{
+    height: 640px;
+    width: 100vw;
+    background-image: url('../img/hero_section_bg.png');
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-section-a-header{
+    flex-direction: column;
+}
+
+.home-section-a-header-l-1{
+    font-size: 16px;
+    line-height: 20px;
+}
+.home-section-a-header-l-2{
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 40px;
+    margin-top: 0px;
+}
+.home-section-a-header-l-3{
+    font-weight: 200;
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.home-section-a-cta{
+    margin-top: 32px;
+}
+
+.home-section-a-cta-btn{
+    height: 48px;
+    font-size: 16px;
+    background-color: #EC0C55;
+    border-radius: 24px;
+    padding: 0px 40px 4px;
+    font-weight: 300;
+}
+
+.home-section-b{
+    padding-top: 40px;
+    padding-bottom: 64px;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+
+.home-section-b-header{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.home-section-b-header-block{
+
+    height: 64px;
+    background-color: black;
+    width: calc(50vw - 490px);
+
+}
+
+.home-section-b-header-text{
+
+    width: max-content;
+    height: 64px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0px 36px 0px 20px;
+
+}
+
+.home-section-b-service-cards{
+    width: 100vw;
+    max-width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.home-section-b-service-card{
+    width: 360px;
+    max-height: 480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 56px;
+}
+
+.home-section-b-service-cards-icon{
+    margin-top: 72px;
+}
+
+.home-section-b-service-cards-icon svg{
+    height: 200px;
+}
+
+.home-section-b-service-cards-title{
+    font-weight: 400;
+    font-size: 28px;
+    width: 276px;
+    margin-top: 54px;
+}
+
+.home-section-b-service-cards-description{
+    font-weight: 300;
+    font-size: 16px;
+    width: 276px;
+    margin-top: 8px;
+    margin-bottom: 58px;
+}
+
+#home-section-b-service-card-a{
+    background-image: url('../img/bg_c.png');
+}
+#home-section-b-service-card-b{
+    background-image: url('../img/bg_b.png');
+}
+#home-section-b-service-card-c{
+    background-image: url('../img/bg_a.png');
+}
+
+.home-section-c{
+    padding-top: 40px;
+    padding-bottom: 56px;
+}
+
+.home-section-c-header{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.home-section-c-header-block{
+
+    height: 64px;
+    background-color: white;
+    width: calc(50vw - 490px);
+
+}
+
+.home-section-c-header-text{
+
+    width: max-content;
+    height: 64px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0px 36px 0px 20px;
+
+}
+
+.home-section-c-cards{
+    margin-top: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.home-section-c-card{
+
+    width: 90vw;
+    margin-bottom: 48px;
+
+}
+
+.home-section-c-card-title{
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.home-section-c-card-line{
+    height: 2px;
+    width: 105px;
+    background-color: white;
+    margin-bottom: 32px;
+}
+
+.home-section-c-card-description{
+    font-size: 16px;
+    font-weight: 200;
+    width: 280px;
+    margin-bottom: 48px;
+}
+
+.home-section-c-card-image{
+    width: 100%;
+}
+
+.home-section-c-card-image img{
+    width: 100%;
+}
+
+#home-section-c-card-a{
+    margin-bottom: 72px;
+}
+
+#home-section-c-card-b{
+
+}
+
+.home-section-c-factsheet{
+    width: 100vw;
+}
+
+.home-section-c-factsheet-btn{
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 24px;
+    padding: 0px 24px 2px;
+}
+
+@media screen and (min-width:580px) {
+    .home-section-a{
+        height: 840px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .home-section-b-service-cards{
+        flex-direction: row;
+    }
+    .home-section-b-service-card{
+        width: 280px;
+    }
+    .home-section-b-service-cards-title{
+        font-size: 24px;
+    }
+    .home-section-b-service-cards-description{
+        font-size: 14px;
+        width: 240px;
+    }
+    .home-section-b-service-cards-icon svg{
+        height: 150px;
+    }
+}
+
+@media screen and (min-width:980px) {
+    .home-section-b-service-cards{
+        margin-left: calc(50vw - 490px);
+        margin-right: calc(50vw - 490px);
+    }
+    .home-section-c-cards{
+        margin-left: calc(50vw - 490px);
+        margin-right: calc(50vw - 490px);
+    }
+}
