@@ -1,8 +1,11 @@
 .home-section-a{
-    height: 640px;
+    height: 100vh;
+    min-height: 640px;
     width: 100vw;
     background-image: url('../img/hero_section_bg.png');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,7 +247,7 @@
 }
 
 .home-section-c-card-title{
-    font-size: 48px;
+    font-size: 32px;
     margin-bottom: 8px;
 }
 
@@ -252,7 +255,7 @@
     height: 2px;
     width: 105px;
     background-color: white;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .home-section-c-card-description{
