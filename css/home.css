@@ -38,9 +38,16 @@
     height: 48px;
     font-size: 16px;
     background-color: #EC0C55;
+    border: 1px solid #EC0C55;
     border-radius: 24px;
     padding: 0px 40px 4px;
     font-weight: 300;
+    transition: 100ms ease-in-out;
+}
+.home-section-a-cta-btn:hover{
+    border: 2px solid #EC0C55;
+    background-color: transparent;
+    transition: 100ms ease-in-out;
 }
 
 .home-section-b{
@@ -220,9 +227,18 @@
 
 .home-section-c-factsheet-btn{
     height: 48px;
+    background-color: white;
     border: 1px solid white;
+    color: black;
     border-radius: 24px;
     padding: 0px 24px 2px;
+    transition: 100ms ease-in-out;
+}
+
+.home-section-c-factsheet-btn:hover{
+    background-color: transparent;
+    color: white;
+    transition: 100ms ease-in-out;
 }
 
 @media screen and (min-width:580px) {
