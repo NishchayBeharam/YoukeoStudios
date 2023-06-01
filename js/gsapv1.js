@@ -50,24 +50,10 @@ const sectionC = gsap.timeline({
         start: 'top 70%',
         end: '75% 80%',
         scrub: 1,
-        markers: true,
+        // markers: true,
     }
 });
 sectionC
 .from('#home-section-c-id',{opacity: 0, duration: 1})
 .from('#home-section-c-card-a',{y: 100, opacity: 0, duration: 1},"-=0.7")
 .from('#home-section-c-card-b',{y: 100, opacity: 0, duration: 1},"-=0.7")
-
-// gsap.registerPlugin(ScrollTrigger)
-
-// gsap.from('#home-section-b-id',{
-//     scrollTrigger:{
-//         trigger: '#home-section-b-id',
-//         start: 'top 55%',
-//         end: 'bottom bottom',
-//         scrub: 1,
-//         markers: true,
-//     },
-//     opacity: 0,
-//     duration: 1,
-// })
