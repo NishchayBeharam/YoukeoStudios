@@ -18,7 +18,7 @@ const sectionBIntro = gsap.timeline({
     scrollTrigger:{
         trigger: '#home-section-b-id',
         start: '-20% 80%',
-        end: 'bottom 80%',
+        end: '70% 80%',
         scrub: 1,
         // markers: true,
     }
