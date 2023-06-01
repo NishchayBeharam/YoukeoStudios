@@ -43,6 +43,7 @@
     padding: 0px 40px 4px;
     font-weight: 300;
     transition: 100ms ease-in-out;
+    cursor: pointer;
 }
 .home-section-a-cta-btn:hover{
     border: 2px solid #EC0C55;
@@ -217,10 +218,6 @@
     margin-bottom: 72px;
 }
 
-#home-section-c-card-b{
-
-}
-
 .home-section-c-factsheet{
     width: 100vw;
 }
@@ -275,6 +272,136 @@
     #home-section-c-card-b{
         margin-bottom: 72px;
     }
+}
+
+.git-overlay{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    transition: 200ms ease-in-out;
+}
+
+.git-overlay-visible{
+    opacity: 1;
+    transition: 200ms ease-in-out;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.git-overlay-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 60vh;
+    width: 80vw;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #EC0C55;
+    border-radius: 16px;
+}
+
+.git-overlay-exit{
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    height: 36px;
+    width: 36px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 100ms ease-in-out;
+}
+
+.git-overlay-exit:hover{
+    background-color: white;
+    transition: 100ms ease-in-out;
+}
+
+.git-overlay-exit svg{
+    height: 14px;
+    stroke: white;
+    transition: 100ms ease-in-out;
+}
+
+.git-overlay-exit:hover svg{
+    stroke: black;
+    transition: 400ms ease-in-out;
+}
+
+.git-overlay-header{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.git-overlay-line{
+    height: 2px;
+    width: 32px;
+    background-color: white;
+    margin-top: 6px;
+    transition: 200ms ease-in-out;
+}
+
+.git-overlay-description{
+    margin-top: 32px;
+}
+
+.git-overlay-socials{
+    margin-top: 54px;
+    height: 36px;
+}
+
+.git-overlay-social-icons{
+    margin-top: 54px;
+    height: 36px;
+}
+
+.git-overlay-social-icons-items{
+    height: 36px;
+    width: 36px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0px 4px;
+    transition: 100ms ease-in-out;
+}
+
+.git-overlay-social-icons-item{
+    height: 36px;
+    width: 36px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0px 4px;
+    transition: 100ms ease-in-out;
+}
+
+.git-overlay-social-icons-item:hover{
+    background-color: #FFFFFF;
+    transition: 100ms ease-in-out;
+}
+
+.git-overlay-social-icons-item .git-overlay-social-icons-item-svg{
+    fill: white;
+}
+
+.git-overlay-social-icons-item:hover .git-overlay-social-icons-item-svg{
+    fill: black;
 }
 
 @media screen and (min-width:980px) {
