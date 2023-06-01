@@ -264,6 +264,17 @@
     .home-section-b-service-cards-icon svg{
         height: 150px;
     }
+    .home-section-c-card{
+        width: 35vw;
+        max-width: 420px;
+    }
+    #home-section-c-card-a{
+        margin-bottom: 72px;
+    }
+    
+    #home-section-c-card-b{
+        margin-bottom: 72px;
+    }
 }
 
 @media screen and (min-width:980px) {
