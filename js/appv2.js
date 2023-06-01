@@ -16,5 +16,6 @@ const hideContactOverlay = async () => {
 
 document.getElementById('home-section-a-cta-id').addEventListener('click',showContactOverlay)
 document.getElementById('nav-social-icons-item-call').addEventListener('click',showContactOverlay)
+document.getElementById('footer-social-icons-item-call').addEventListener('click',showContactOverlay)
 document.getElementById('nav-booking-btn-id').addEventListener('click',showContactOverlay)
 document.getElementById('git-overlay-exit').addEventListener('click',hideContactOverlay)

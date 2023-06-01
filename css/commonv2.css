@@ -14,6 +14,26 @@ body{
     overflow-x: hidden;
 }
 
+.border-white{
+    border: 1px solid white;
+}
+
+.border-black{
+    border: 1px solid black;
+}
+
+.fill-white{
+    fill: white;
+}
+
+.fill-black{
+    fill: black;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
 /* Navbar */
 nav {
     width: 100vw;
@@ -58,28 +78,44 @@ nav {
     height: 36px;
 }
 
-.nav-social-icons-item{
-    border: 1px solid black;
+.social-icons-item{
     border-radius: 18px;
     height: 36px;
     width: 36px;
     margin: 0px 4px;
     transition: 100ms ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
-.nav-social-icons-item:hover{
-    background-color: #000000;
-    transition: 100ms ease-in-out;
+.social-icons-item:hover{
+    transition: 200ms ease-in-out;
 }
 
-.nav-social-icons-item-svg{
-    fill: #000000;
-    transition: 100ms ease-in-out;
+.social-icons-item-svg{
+    transition: 200ms ease-in-out;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
 }
 
-.nav-social-icons-item:hover .nav-social-icons-item-svg{
-    fill: #FFFFFF;
-    transition: 100ms ease-in-out;
+.social-icons-item-svg-hover{
+    transition: 200ms ease-in-out;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: -150%;
+}
+
+.social-icons-item:hover .social-icons-item-svg{
+    transition: 200ms ease-in-out;
+    left: 150%;
+}
+
+.social-icons-item:hover .social-icons-item-svg-hover{
+    transition: 200ms ease-in-out;
+    left: 50%;
 }
 
 .nav-booking-btn{
@@ -87,18 +123,50 @@ nav {
     border: 1px solid #081331;
     border-radius: 18px;
     height: 36px;
-    padding: 0px 16px 2px;
+    width: 160px;
     font-size: 14px;
     font-weight: 300;
     margin-left: 8px;
     transition: 100ms ease-in-out;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-.nav-booking-btn:hover{ 
-    transition: 100ms ease-in-out;
-    background-color: #000000;
-    color: white;
+.nav-booking-btn-text{
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%,-50%);
+    color: black;
+    transition: 120ms ease-in;
+}
+
+.nav-booking-btn:hover .nav-booking-btn-text{
+    top: -147%;
+    transition: 120ms ease-in;
+}
+
+.nav-booking-btn-text-hover{
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    top: 147%;
+    transform: translate(-50%,-50%);
+    color: black;
+    transition: 120ms ease-in;
+}
+
+.nav-booking-btn:hover .nav-booking-btn-text-hover{
+    top: 47%;
+    transition: 120ms ease-in;
+}
+
+#nav-social-icons-item-call{
+    cursor: pointer;
 }
 
 /* footer */
@@ -159,29 +227,6 @@ footer{
 .footer-social-icons{
     margin-top: 54px;
     height: 36px;
-}
-
-.footer-social-icons-item{
-    height: 36px;
-    width: 36px;
-    border: 1px solid white;
-    background-color: transparent;
-    border-radius: 50%;
-    margin: 0px 4px;
-    transition: 100ms ease-in-out;
-}
-
-.footer-social-icons-item:hover{
-    background-color: #FFFFFF;
-    transition: 100ms ease-in-out;
-}
-
-.footer-social-icons-item:hover .footer-social-icons-item-svg{
-    fill: #000000;
-}
-
-.footer-social-icons-item-svg{
-    fill: white;
 }
 
 .body-wrapper{
