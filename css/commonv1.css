@@ -58,10 +58,6 @@ nav {
     height: 36px;
 }
 
-.nav-social-icons{
-
-}
-
 .nav-social-icons-item{
     border: 1px solid black;
     border-radius: 18px;
@@ -96,6 +92,7 @@ nav {
     font-weight: 300;
     margin-left: 8px;
     transition: 100ms ease-in-out;
+    cursor: pointer;
 }
 
 .nav-booking-btn:hover{ 
