@@ -239,7 +239,7 @@ footer{
 
 @media screen and (max-width:450px){
 
-    .nav-social-icons{
+    #nav-social-icons{
         display: none;
     }
 
