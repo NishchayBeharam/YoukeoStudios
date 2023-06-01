@@ -237,7 +237,7 @@ footer{
     text-decoration: underline;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
 
     .nav-social-icons{
         display: none;
