@@ -7,10 +7,10 @@ enter
 .from('#nav-social-icons-call',{x: -5, opacity: 0, duration: 0.5},"-=0.4")
 .from('#nav-social-icons-email',{x: -5, opacity: 0, duration: 0.5},"-=0.4")
 .from('#nav-booking-btn-wrapper',{y: -10, opacity: 0, duration: 0.5},"-=0.8")
-.from('#home-section-a-id',{y: -30, opacity: 0, duration: 0.5},"-=0.8")
-.from('#home-section-a-header-l-1',{y: -30, opacity: 0.5, duration: 0.5},"-=0.4")
-.from('#home-section-a-header-l-2',{y: -30, opacity: 0.5, duration: 0.5},"-=0.4")
-.from('#home-section-a-header-l-3',{y: -30, opacity: 0.5, duration: 0.5},"-=0.4")
+.from('#home-section-a-id',{y: -30, opacity: 0, duration: 1},"-=0.8")
+.from('#home-section-a-header-l-1',{y: -30, opacity: 0, duration: 0.5},"-=0.4")
+.from('#home-section-a-header-l-2',{y: -30, opacity: 0, duration: 0.5},"-=0.4")
+.from('#home-section-a-header-l-3',{y: -30, opacity: 0, duration: 0.5},"-=0.4")
 .from('#home-section-a-cta-id',{y: -50, opacity: 0, duration: 0.8},"-=0.7")
 
 
@@ -24,7 +24,7 @@ const sectionBIntro = gsap.timeline({
     }
 });
 sectionBIntro
-.from('#home-section-b-id',{y:100 ,opacity: 0, duration: 1})
+.from('#home-section-b-id',{y:100 ,opacity: 0, duration: 0.5})
 .from('#home-section-b-service-card-a-id',{y: 100, opacity: 0, duration: 1},"-=0.7")
 .from('#home-section-b-service-card-b-id',{y: 100, opacity: 0, duration: 1},"-=0.7")
 .from('#home-section-b-service-card-c-id',{y: 100, opacity: 0, duration: 1},"-=0.7")
