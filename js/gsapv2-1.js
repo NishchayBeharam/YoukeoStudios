@@ -72,3 +72,36 @@ sliderB
 .to('#home-section-c-slider-b-slide-1',{transform: "translateY(100%)" ,duration:1},"+=2")
 .to('#home-section-c-slider-b-slide-2',{transform: "translateY(100%)" ,duration:1},"+=2")
 .to('#home-section-c-slider-b-slide-3',{transform: "translateY(100%)" ,duration:1},"+=2")
+
+const sliderPlayPauseA = document.getElementById('home-section-c-slider-a-play-pause-btn')
+const sliderPlayBtnA = document.getElementById('home-section-c-slider-a-play-btn')
+const sliderPauseBtnA = document.getElementById('home-section-c-slider-a-pause-btn')
+
+let sliderAPauseFlag = 0
+sliderPlayPauseA.addEventListener('click',()=>{
+    sliderPauseBtnA.classList.toggle('display-none')
+    sliderPlayBtnA.classList.toggle('display-none')
+    if(sliderAPauseFlag==0){
+        sliderA.pause()
+        sliderAPauseFlag = 1
+    } else {
+        sliderA.play()
+        sliderAPauseFlag = 0
+    }
+})
+
+const sliderPlayPauseB = document.getElementById('home-section-c-slider-b-play-pause-btn')
+const sliderPlayBtnB = document.getElementById('home-section-c-slider-b-play-btn')
+const sliderPauseBtnB = document.getElementById('home-section-c-slider-b-pause-btn')
+let sliderBPauseFlag = 0
+sliderPlayPauseB.addEventListener('click',()=>{
+    sliderPauseBtnB.classList.toggle('display-none')
+    sliderPlayBtnB.classList.toggle('display-none')
+    if(sliderBPauseFlag==0){
+        sliderB.pause()
+        sliderBPauseFlag = 1
+    } else {
+        sliderB.play()
+        sliderBPauseFlag = 0
+    }
+})
