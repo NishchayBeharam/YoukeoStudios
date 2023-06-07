@@ -58,20 +58,24 @@ sectionC
 .from('#home-section-c-card-a',{y: 100, opacity: 0, duration: 1},"-=0.7")
 .from('#home-section-c-card-b',{y: 100, opacity: 0, duration: 1},"-=0.7")
 
-const sliderA = gsap.timeline({repeat: -1})
+const sliderA = gsap.timeline({
+    repeat: -1
+})
 
 sliderA
 .to('#home-section-c-slider-a-slide-1',{transform: "translateY(100%)" ,duration:1},"+=2")
 .to('#home-section-c-slider-a-slide-2',{transform: "translateY(100%)" ,duration:1},"+=2")
-.to('#home-section-c-slider-a-slide-3',{transform: "translateY(100%)" ,duration:1},"+=2")
+// .to('#home-section-c-slider-a-slide-3',{transform: "translateY(100%)" ,duration:1},"+=2")
 
 
-const sliderB = gsap.timeline({repeat: -1, delay: 1})
+const sliderB = gsap.timeline({
+    repeat: -1, delay: 1
+})
 
 sliderB
 .to('#home-section-c-slider-b-slide-1',{transform: "translateY(100%)" ,duration:1},"+=2")
 .to('#home-section-c-slider-b-slide-2',{transform: "translateY(100%)" ,duration:1},"+=2")
-.to('#home-section-c-slider-b-slide-3',{transform: "translateY(100%)" ,duration:1},"+=2")
+// .to('#home-section-c-slider-b-slide-3',{transform: "translateY(100%)" ,duration:1},"+=2")
 
 const sliderPlayPauseA = document.getElementById('home-section-c-slider-a-play-pause-btn')
 const sliderPlayBtnA = document.getElementById('home-section-c-slider-a-play-btn')
